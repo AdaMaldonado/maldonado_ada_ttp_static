@@ -1,5 +1,12 @@
+<!DOCTYPE html>
 <html>
+  <head></head>
   <body>
-    <h1> My name is Ada Maldonado and my favorite hobby is reading manga. The current time is: </h1>
+    <h1> My name is Ada Maldonado and my favorite hobby is reading manga. The current time is: <span id= 'datetime'></span></h1>
   </body>
 </html>
+
+<script>
+  var dt = new Date();
+  document.getElementById('datetime').innerHTML = dt.toLocaleTimeString().replace("PM", "").replace("AM", "");
+</script>
