@@ -7,6 +7,9 @@
 </html>
 
 <script>
-  var dt = new Date();
-  document.getElementById('datetime').innerHTML = dt.toLocaleTimeString().replace("PM", "").replace("AM", "");
+  var renderTime = function () {
+    var dt = new Date();
+    document.getElementById('datetime').innerHTML = dt.toLocaleTimeString().replace("PM", "").replace("AM", "");
+  };
+  setInterval(renderTime, 1000);
 </script>
